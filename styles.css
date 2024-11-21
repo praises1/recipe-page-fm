@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+
+.recipe-img > img{
+    max-width: 100%;
+    display: block;
+    border-radius: .75rem;
+}
+
+/* LAYOUT STYLES */
+h1,h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 2.5rem;
+    color:  hsl(24, 5%, 18%);
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 1rem;
+}
+
+.ingredients, .instructions, .nutrition{
+    margin: 1rem 0;
+}
+
+ul, ol{
+    padding-left: 1.2em;
+}
+
+ul li::marker{
+    color:  hsl(14, 45%, 36%);
+}
+
+ol li::marker{
+    color:  hsl(14, 45%, 36%);
+}
+
+p, li{
+    color:hsl(30, 10%, 34%);
+    line-height: 1.6;
+}
+
+hr{
+    margin: 1.5rem 0;
+    border: 1px solid hsl(30, 18%, 87%);
+}
+/* LAYOUT STYLES - END */
+
+/* GENERAL STYLES */
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.75rem;
+    max-width: 800px;
+    border-radius: 1.5rem;
+    margin: 2rem;
+}
+
+.information{
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.description{
+    margin: 1.2rem 0;
+}
+
+
+/* PREPARATION */
+.preparations{
+    background-color: hsl(330, 100%, 98%);
+    padding: .9em;
+    border-radius: .8rem;
+}
+
+.preparations h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: .6rem;
+}
+
+.preparations >ul> li{
+    padding-left: 1em;
+}
+
+ul li{
+    padding-left: 1em;
+}
+/* PREPARATION - END*/
+
+/* INSTRUCTIONS */
+.instructions>ol>li{
+    padding-left: 1em;
+}
+
+ol li::marker{
+    font-weight: 700;
+}
+/* INSTRUCTIONS - END*/
+
+/* NUTRITION */
+.table .values{
+    display: flex;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.table .values:last-child{
+    border-bottom: 0;
+}
+
+.table .values > * {
+    width: 100px;
+    margin-right: auto ;
+}
+
+.amount{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+/* NUTRITION -END */
